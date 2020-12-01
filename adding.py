@@ -10,11 +10,14 @@ import time
 import random
 from time import sleep
 
-# Example of a connection
-api_id = 2945521
-api_hash = "287777e295269773d017fef7bd4fe3ef"
-phone = "+37253678809"
-client = TelegramClient(phone, api_id, api_hash)
+
+#enter the values here
+api_id = 'Enter your api_id'
+api_hash = 'enter your api hash'
+phone = 'enter your phone'
+
+
+
 client.connect()
 if not client.is_user_authorized():
     client.send_code_request(phone)
